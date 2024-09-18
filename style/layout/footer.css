@@ -22,7 +22,7 @@ footer .links .social-media img {
 }
 footer .copyright {
   height: 216px;
-  background-image: url("/public/imgs/footer/footer-bg.png");
+  background-image: url("../../public/imgs/footer/footer-bg.png");
   padding: 0 75px;
   color: #a4a4a5;
   font-weight: 300;
@@ -73,7 +73,7 @@ footer .copyright .copyright-txt .copyright-date {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/public/imgs/footer/footer-bg-mb.png");
+    background-image: url("../../public/imgs/footer/footer-bg-mb.png");
   }
   footer .copyright .policy {
     flex-direction: column;
