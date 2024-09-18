@@ -1,0 +1,92 @@
+.signals {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.signals .floating-pulse {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+
+.signals .floating-pulse .pulse {
+  width: 580px;
+  height: 251px;
+  position: absolute;
+}
+
+.signals .floating-pulse .right-pulse {
+  right: -100px;
+  bottom: 0;
+}
+
+.signals .situations {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 56px;
+}
+
+.signals .situations .situation {
+  display: flex;
+  width: calc(100% / 3.5);
+  margin-right: 45px;
+  margin-bottom: 30px;
+}
+
+.signals .situations .situation .situation-desc {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.signals .situations .situation .situation-img {
+  margin-right: 20px;
+}
+
+.signals .situations .situation .situation-img img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 640px) {
+  .signals {
+    margin-top: 50px;
+  }
+
+  .signals .floating-pulse {
+    display: none;
+  }
+
+  .signals .situations {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .signals .situations .situation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .signals .situations .situation .situation-desc {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .signals .situations .situation .situation-img {
+    margin-right: 0;
+  }
+
+  .signals .situations .situation .situation-img img {
+    width: 80px;
+    height: 80px;
+  }
+}

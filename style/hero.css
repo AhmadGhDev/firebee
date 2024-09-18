@@ -1,0 +1,343 @@
+@import url("./components/swiper.css");
+
+.hero {
+  max-width: 100%;
+  background-color: var(--section-color-);
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+}
+.hero .carousel-side {
+  width: 50%;
+}
+
+.hero .carousel-side .carousel {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.hero .carousel-side .carousel .marks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  position: absolute;
+  z-index: 9;
+  top: 50px;
+  left: 50px;
+}
+
+.features-mb {
+  display: none !important;
+}
+
+.hero .features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.hero .features .feat {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.hero .features .feat .feat-img {
+  margin-right: 25px;
+}
+
+.hero .features .feat .feat-img img {
+  width: 75px;
+}
+
+.hero .text-side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .text-side .rating {
+  margin-bottom: 2rem;
+}
+
+.hero .text-side .rating h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.hero .text-side .rating .reviews {
+  display: flex;
+  align-items: center;
+}
+
+.hero .text-side .rating .reviews .stars {
+  margin-right: 1rem;
+}
+
+.hero .text-side .rating .reviews .stars img {
+  width: 18.12px;
+  height: 16px;
+}
+
+.hero .text-side .rating .reviews .reviews-num {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.hero .text-side .rating .reviews .order-today {
+  margin: 0 !important;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hero .text-side .kit {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #2d5ece, #9f4ea1) border-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+}
+
+.hero .text-side .kit .kit-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero .text-side .kit .kit-title h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.hero .text-side .kit .kit-title .price {
+  display: flex;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.hero .text-side .kit .kit-title .price .old-price {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.hero .text-side .kit .kit-title .price .old-price:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  color: red;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.hero .text-side .kit .kit-title button {
+  margin-top: 5px;
+  width: 244px;
+  height: 30px;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
+}
+
+.hero .text-side .kit .kit-content {
+  margin-top: 10px;
+}
+
+.hero .text-side .kit .kit-content .steps .step {
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.hero .text-side .kit .kit-content .steps .step img {
+  margin-right: 1rem;
+}
+
+.hero .text-side .kit .kit-content .description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.hero .text-side .add-to-cart {
+  align-self: center;
+}
+
+.hero .text-side .add-to-cart button {
+  width: 548px;
+  height: 79px;
+  border-radius: 48.5px;
+  background-color: var(--main-color-);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.hero .text-side .add-to-cart button img {
+  width: 20px;
+  margin-left: 0.5rem;
+}
+
+.hero .text-side .add-to-cart button:hover {
+  background-color: var(--hover-color-);
+}
+
+.hero .text-side .add-to-cart .payment-methods {
+  width: fit-content;
+  margin: auto;
+}
+@media (max-width: 640px) {
+  .hero {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero .text-side {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero .text-side .rating {
+    text-align: center;
+  }
+
+  .hero .text-side .rating h2 {
+    font-size: 32px;
+  }
+
+  .hero .text-side .rating .reviews {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .text-side .kit .kit-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .hero .text-side .kit .kit-content {
+    margin-top: 10px;
+  }
+
+  .hero .text-side .kit .kit-content .steps .step {
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero .text-side .add-to-cart button {
+    width: 345px;
+    height: 60px;
+    border-radius: 39.5px;
+  }
+
+  .hero .text-side .add-to-cart .payment-methods img {
+    width: 335px;
+  }
+
+  .hero .features-mb {
+    display: flex;
+  }
+
+  .hero .features-mb .feat {
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .hero .features-mb .feat .feat-img {
+    margin: 0;
+  }
+
+  .hero .features-mb .feat .feat-img img {
+    width: 50px;
+  }
+
+  .hero {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero .carousel-side {
+    width: 100%;
+  }
+
+  .hero .carousel-side .carousel {
+    width: 100%;
+  }
+
+  .hero .carousel-side .carousel .marks {
+    top: 10px;
+    left: 10px;
+  }
+
+  .hero .carousel-side .carousel .marks img {
+    width: 64px;
+  }
+
+  .hero .carousel-side .features {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .hero .carousel-side .features .feat {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .hero .carousel-side .features .feat .feat-img {
+    margin-right: 25px;
+  }
+
+  .hero .carousel-side .features .feat .feat-img img {
+    width: 75px;
+  }
+}
