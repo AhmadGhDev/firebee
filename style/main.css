@@ -12,7 +12,12 @@
   --hover-color-: #0c9a4ed2;
   --section-color-: #f6f6f6;
 }
-
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
